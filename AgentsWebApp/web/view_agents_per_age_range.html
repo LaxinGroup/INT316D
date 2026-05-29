@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>View Agents Per Age and Gender Range Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>View Agents Per Age and Gender Range</h1>
+            <p>Fill in below:</p>
+            <form action="GetAgentsPerAgeRangeServlet.do" method="POST">
+                <table>
+                    <tr>
+                        <td>Minimum age:</td>
+                        <td>
+                            <input type="text" name="minAge"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Minimum age:</td>
+                        <td>
+                            <input type="text" name="maxAge"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <select name="gender">
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="GET"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
